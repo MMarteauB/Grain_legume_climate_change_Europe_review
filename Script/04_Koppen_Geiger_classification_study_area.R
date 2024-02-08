@@ -11,7 +11,7 @@ library(latticeExtra) ; library(dplyr); library(ggplot2)
 # Input data --------------------------------------------------------------
 
 r <- raster("../Input/Map_KG-Global/KG_1986-2010.grd") # Koppen-Geiger areas
-cropland_0 <- raster("../Input/CroplandArea2000_Geotiff/Cropland2000_5m.tif") # Map of cropland
+load("../Input/CroplandArea2000_Geotiff/Cropland2000_5m.RData") # Map of cropland
 
 data <- read.csv2("../Input/Data_review.csv",fileEncoding="latin1",dec=',',colClasses=c(x_map="numeric",y_map="numeric"))
 
